@@ -1,7 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const challengerController = require("../controller");
+const challengeController = require("../controller");
 
 // Challenge management routes
-router.post("/", challengerController.createChallenge);             // POST /challenges
-router.get("/", challengerController.readAllChallenges);
+router.post("/challenges", challengeController.createChallenge);    // Create a new challenge
+router.get("/challenges", challengeController.readAllChallenges);   // Get all challenges
+
+module.exports = router;
