@@ -1,4 +1,4 @@
-const model = require("./models/challlengeModel");
+const model = require("./models/challengerModel");
 
 const handleErrorResponse = (res, error, statusCode = 500) => {
     console.error(error);
